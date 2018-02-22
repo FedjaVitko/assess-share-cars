@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  frontend:
+    build: ./
+    labels:
+      calponia.publish: 3000
+
