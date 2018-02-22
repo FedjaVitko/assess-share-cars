@@ -43,7 +43,7 @@ class App extends Component {
     // for(let i = 0; i < carIDs.length; i++) {
     //   carScores.push(this.state.data.find(obj => obj[carIDs[i]]).CarScore);
     // }
-    var carScores = [87, 36, 13, 56, 78, 14, 34, 89, 48, 68]; 
+    var carScores = [87, 82, 78, 62, 56, 48, 43, 27, 21, 13]; 
     var scores = objects.map(obj => obj["UserScore"]);
     return (
       <div>

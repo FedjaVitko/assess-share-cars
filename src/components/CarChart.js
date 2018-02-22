@@ -9,7 +9,7 @@ class DriverChart extends Component {
         datasets: [
             {
                 label: 'Car Scores',
-                backgroundColor: ["#689F38", "#E20015", "#E20015", "orange", "#689F38", "#E20015", "#E20015", "#689F38", "orange", "orange"],
+                backgroundColor: ["green", "green", "green", "orange", "orange", "orange", "orange", "#E20015", "#E20015", "#E20015"],
                 borderColor: 'rgba(255,99,132,1)',
                 borderWidth: 1,
                 hoverBackgroundColor: 'rgba(255,99,132,0.4)',
