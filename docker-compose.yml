@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  loadbalancing:
+    build: ./loadbalancing
+    labels:
+      calponia.publish: 80
+      calponia.network.whitelist: |
+        api\.guildwars2\.com
+        .*\.gw2efficiency\.com
+        google\.de
+    ports:
+      - '8090:80'
+
+  frontend:
+    build: ./
