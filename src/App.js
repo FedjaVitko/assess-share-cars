@@ -43,13 +43,14 @@ class App extends Component {
     // for(let i = 0; i < carIDs.length; i++) {
     //   carScores.push(this.state.data.find(obj => obj[carIDs[i]]).CarScore);
     // }
+    var carScores = [87, 36, 13, 56, 78, 14, 34, 89, 48, 68]; 
     var scores = objects.map(obj => obj["UserScore"]);
     return (
       <div>
         <FilterComponent onFilter={this.onFilter} />
         {this.state.renderDriverId && <SearchComponent onChange={this.handleInputChange} className="flex-center" />}
         {this.state.renderDriverId && <DriverChart scores={scores} id={this.state.id} key={this.state.id} />}
-        {this.state.renderCarId && <CarChart carIDs={carIDs} scores={scores} />}
+        {this.state.renderCarId && <CarChart carIDs={carIDs} scores={carScores} />}
       </div>
     );
   }
